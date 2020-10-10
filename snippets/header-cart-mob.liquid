@@ -2,13 +2,6 @@
 <span class="header-icons-noti cart-total">{{ cart.item_count }}</span>
 <!-- Header cart noti -->
 <div class="header-cart header-dropdown">
-  {% if cart.item_count < 1 %}
-  <ul class="header-cart-wrapitem">
-    <li>
-      <p class="text-center cart-empty">{{ 'cart.general.no_items'| t }}</p>
-    </li>
-  </ul>
-  {% else %}
   <ul class="header-cart-wrapitem">
     {% for item in cart.items %}
     <li class="header-cart-item">
@@ -51,5 +44,4 @@
       </a>
     </div>
   </div>
-  {% endif %}
 </div>

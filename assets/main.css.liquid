@@ -1050,7 +1050,7 @@ li.sale-noti > a {
 }
 
 .logo-mobile img {
-  max-height: 27px;
+  max-height: 50px;
 }
 
 /*[ btn show menu ]
@@ -2198,7 +2198,7 @@ li.sale-noti > a {
 
 .table-shopping-cart .column-1 {
   width: 225px;
-  padding-left: 50px;
+  padding-left: 8px;
 }
 .table-shopping-cart .column-2 {
   width: 330px;
@@ -2210,7 +2210,7 @@ li.sale-noti > a {
 }
 .table-shopping-cart .column-4 {
   width: 355px;
-  padding-right: 30px;
+  padding-right: 8px;
 }
 .table-shopping-cart .column-4 button.remove {
 	background: transparent;
@@ -2243,20 +2243,25 @@ li.sale-noti > a {
 
 @media (max-width: 1000px) {
 
+	.table-shopping-cart .column-1{
+    padding-right: 0;
+  }
+
 	.table-shopping-cart .column-2 {
 		width: 33%;
 		padding-left: 10px;
 		padding-right: 10px;
 	}
 
+  .table-shopping-cart .column-3  {
+		display: none;
+	}
+
 	.table-shopping-cart .column-4 {
 		padding-right: 0;
 	}
 
-	.table-shopping-cart .column-1,
-	.table-shopping-cart .column-3  {
-		display: none;
-	}
+	
 }
 
 .table-shopping-cart .table-row .column-2 {
